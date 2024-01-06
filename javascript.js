@@ -1,9 +1,10 @@
 let entries=[];
 
-const entries_box=document.getElementById("#entries");
+const input=document.querySelector("#input");
 const btn=document.querySelectorAll(".btn");
 
 function getBtnValue(e){
+    input.value=this.value;
 
     console.log(this.value);
  

@@ -3,34 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+.main_container{
+    box-shadow:1px 2px   10px  rgb(47, 52, 54);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px auto;
+    height: fit-content;
+    width: fit-content;
+}
 .delet_options{
     display: flex;
     flex-direction: row;
 }
-
-
-#entries{
-  width: 100%;
-  padding: 12px 2px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-button{
+.delet_options button{
+    background-color: rgb(79, 178, 231);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
     width: 50%;
-    margin: 3px 5px;
+    margin: 3px 3px;
     padding: 5px 5px;
+    
 }
-.main_container{
-    height: fit-content;
-    width: fit-content;
-    margin: auto;
+.delet_options .erase{
+    background-color: rgb(245, 97, 97);
 }
+.delet_options button:hover{
+    background-color: rgb(252, 254, 255);
+    border: 1.5px solid rgb(79, 178, 231);
+  
+}
+
+
+
+#input{
+  width: 100%;
+  padding: 12px 10px;
+  margin:10px 10px 20px 0px;
+  border:none;
+  box-shadow:1px 2px   10px  rgb(47, 52, 54);
+  border-radius: 4px;
+ 
+}
+ 
+
 .container{
    display: flex;
    flex-direction: row;
+   padding: 10px 10px;
 
 }
 .numbers,.operations{
@@ -45,7 +66,7 @@ button{
     grid-template-columns: repeat(2,auto);
 }
 .btn{
-    
+    background-color: #fff;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size:20px;
@@ -54,10 +75,15 @@ button{
     height: 50px;
     width: 50px;
     padding: 15px 10px;
-    margin: 5px;
-    border: 1px solid rgb(24, 24, 44);
+    margin: 8px;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(55, 81, 95);
+}
+.btn:hover{
+    color: rgb(79, 178, 231);
+    font-size: 22px;
 }
 .negative{
     font-size: 14px;
