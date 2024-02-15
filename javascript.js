@@ -105,6 +105,11 @@ function inputEquals() {
         displayValue = displayValue;
     }else if(result==='wrong division'){
         displayValue=0;
+        firstOperand = displayValue;
+        secondOperand = null;
+        firstOperator = null;
+        secondOperator = null;
+        result = null;
 
     } else if(secondOperator != null) {
         //handles final result
