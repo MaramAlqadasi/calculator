@@ -72,20 +72,37 @@
     font-size:20px;
     font-weight: bold;
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 35px;
     padding: 15px 10px;
-    margin: 8px;
+    margin: 8px ;
     border: none;
-    border-radius: 50%;
+    border-radius: 20%;
     cursor: pointer;
     box-shadow: 1px 1px 5px rgb(55, 81, 95);
 }
-.btn:hover{
-    color: rgb(79, 178, 231);
-    font-size: 22px;
+ .operation{
+   color: rgb(70, 190, 70);
+   font-weight: bolder;
+}
+.erase{
+    background-color: rgb(244, 213, 156);
 }
 .negative{
+    font-size: small;
+}
+.clear{
+    background-color: rgb(242, 151, 151);
+}
+.equal{
+    background-color: lightgreen;}
+.btn:hover{
+    font-size: 22px;
+    scale: 1.05}
+.negative{
     font-size: 14px;
+}
+.negative:hover{
+    font-size: 16px;
 }
 
